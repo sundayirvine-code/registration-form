@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+}
+
+.container{
+    width: 50vw;
+    height:fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #161616;
+    overflow-x:none;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+textarea {
+  resize: none;
+}
+.form-floating>label {
+  background: #0000;
+}
+.form-control, .form-select{
+  border: none;  
+  border-radius: 0%;
+  border-bottom: 1px solid #aaaaaa;
+  background-color: #FAFAFA;
+}
+.form-control:valid, .form-select:valid{
+ background-color: rgb(232, 240, 254);
+ border-radius: 5px;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: none;
+  box-shadow: none;
+  border-bottom: 2px solid #05c46b;
+  background-color: #FAFAFA;
+}
+.btn{
+  box-shadow: inset 0 0 0 0 #05c46b;
+  text-transform: uppercase;
+  transition: 0.25s ease-in-out;
+}
+.btn:hover{
+  box-shadow: inset 50vw 0 0 0 #05c46b;
+  /*background-color: #05c46b;*/
+  border-color: #05c46b;
+}
+#message {
+    display:none;
+    background: #FAFAFA;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    transition: 0.4s ease-in-out;
+  }
+
+  #message p {
+    padding: 0px 35px;
+    font-size: 12px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }

@@ -42,22 +42,6 @@
     </div>
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script>
-        var forms = document.querySelectorAll('.needs-validation')
-
-// Loop over them and prevent submission
-Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-        }
-        
-        
-        form.classList.add('was-validated')
-    }, false)
-    })
-    </script>
+    <script src="login.js"></script>
 </body>
 </html>
